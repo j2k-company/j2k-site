@@ -1,0 +1,30 @@
+html {
+    background-color: #e58300;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto Mono", monospace;
+}
+
+header {
+    width: 100%;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.main {
+    height: 400px;
+}
+
+footer {
+    width: 100%;
+    border-top: 1px solid black;
+    height: 30px;
+    display: flex;
+}
+
+.about {
+    flex: 1;
+    text-align: center;
+}

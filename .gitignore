@@ -2,3 +2,5 @@
 /.gradle/
 /build/
 /frontend.iml
+/frontend/src/dist/
+/frontend/src/.cache/
