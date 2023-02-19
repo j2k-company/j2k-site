@@ -8,7 +8,9 @@ allprojects {
 
 task("build") {
     copy {
-        from("frontend/src")
+        from("frontend/src") {
+            exclude(".cache", "dist")
+        }
         into("backend/src/main/resources/files")
     }
 }
