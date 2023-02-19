@@ -1,4 +1,4 @@
-package com.j2k.plugins
+package site.j2k.plugins
 
 import freemarker.cache.ClassTemplateLoader
 import io.ktor.server.routing.*

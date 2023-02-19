@@ -1,5 +1,5 @@
 allprojects {
-    group = "com.j2k"
+    group = "site.j2k"
     version = "0.0.1"
 }
 

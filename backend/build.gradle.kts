@@ -7,10 +7,10 @@ plugins {
     id("io.ktor.plugin") version "2.2.3"
 }
 
-group = "com.j2k"
+group = "site.j2k"
 version = "0.0.1"
 application {
-    mainClass.set("com.j2k.ApplicationKt")
+    mainClass.set("site.j2k.ApplicationKt")
 
     val isDevelopment: Boolean = project.ext.has("development")
     applicationDefaultJvmArgs = listOf("-Dio.ktor.development=$isDevelopment")

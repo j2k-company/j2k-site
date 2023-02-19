@@ -1,11 +1,12 @@
-package com.j2k
+package site.j2k
 
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import io.ktor.server.testing.*
 import kotlin.test.*
 import io.ktor.http.*
-import com.j2k.plugins.*
+import site.j2k.plugins.*
+import site.j2k.plugins.configureRouting
 
 class ApplicationTest {
     @Test
