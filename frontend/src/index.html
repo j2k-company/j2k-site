@@ -6,24 +6,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<header>
-    <h1>J2K</h1>
-</header>
-<div class="main"></div>
-<footer>
-    <div class="about">
-        <a href="our-team.html">our team</a>
+<div id="wrapper">
+    <header>
+        <h1 id="head-name">J2K</h1>
+    </header>
+    <div id="main">
+        <h1>КАКОЙ ТО МОТИВИРУЮЩИЙ СЛОГАН</h1>
     </div>
-    <div class="about">
-        <h1>Contacts:</h1>
-    </div>
-    <div class="about">
-        <h1>Sponsors</h1>
-    </div>
-</footer>
+    <footer>
+        <div id="about-left" class="about" onclick="location.href='our-team.html';">
+            <!--    remove ".html" in prod    -->
+            <h1>Our team</h1>
+        </div>
+        <div id="about-center" class="about" onclick="location.href='contacts.html';">
+            <h1>Contacts</h1>
+        </div>
+        <div id="about-right" class="about" onclick="location.href='sponsors.html';">
+            <h1>Sponsors</h1>
+        </div>
+    </footer>
+</div>
 <script src="index.js"></script>
 </body>
 </html>
