@@ -3,8 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>J2K Team</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="our-team.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
+<div id="wrapper">
+    <header>
+        <h1 id="head-name">J2K</h1>
+    </header>
+    <div class="main">
+        <div class="member-info">
+            <div>
+                <img src="images/jaka.jpg" alt="jaka2005's avatar">
+            </div>
+            <div class="data">
+                <p>Nickname: jaka2005</p>
+                <p>Email: <a href="mailto:jakalogin1808@gmail.com">jakalogin1808@gmail.com</a></p>
+                <p>Post: CEO</p>
+            </div>
+        </div>
+        <div class="member-info right">
+            <div>
+                <img src="images/jaka.jpg" alt="ShebiK's avatar">
+            </div>
+            <div class="data">
+                <p>Nickname: ShebiK</p>
+                <p>Email: undefined</p>
+                <p>Post: software engineer</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="about-left" class="about" onclick="location.href='our-team.html';">
+            <!--    remove ".html" in prod    -->
+            <h1>Our team</h1>
+        </div>
+        <div id="about-center" class="about" onclick="location.href='contacts.html';">
+            <h1>Contacts</h1>
+        </div>
+        <div id="about-right" class="about" onclick="location.href='sponsors.html';">
+            <h1>Sponsors</h1>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
