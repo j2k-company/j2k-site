@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: "Roboto Mono", monospace;
+    background-color: #ffc632;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#main {
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+#main-button {
+    /* TODO: choose the color of the most important active elements */
+    /* TODO: develop buttons design */
+    background-color: #ff7300;
+    border: 1px transparent;
+    /* important styles */
+    appearance: none;
+    min-width: 150px;
+    height: 35px;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px black;
+    /**/
+    /*transform: skew(-20deg);*/
+}
+
+#main-button:hover {
+    background-color: #ff9443;
+}
+
+#main-button:focus {
+    background-color: #ffb47d;
+}
