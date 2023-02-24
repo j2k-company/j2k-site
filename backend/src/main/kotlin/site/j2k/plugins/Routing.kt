@@ -2,11 +2,12 @@ package site.j2k.plugins
 
 import freemarker.cache.ClassTemplateLoader
 import io.ktor.http.*
-import io.ktor.server.routing.*
-import io.ktor.server.response.*
 import io.ktor.server.application.*
 import io.ktor.server.freemarker.*
 import io.ktor.server.http.content.*
+import io.ktor.server.plugins.statuspages.*
+import io.ktor.server.response.*
+import io.ktor.server.routing.*
 import java.io.BufferedReader
 import java.io.FileNotFoundException
 import java.io.InputStreamReader
@@ -28,9 +29,29 @@ fun Application.configureRouting() {
                 HttpStatusCode.OK
             )
         }
-        
+
         static("/") {
-            resources("files")
+            static("css") {
+                resources("files/css")
+            }
+            static("images") {
+                resources("files/images")
+            }
+            static("scripts") {
+                resources("files/index.js")
+            }
+        }
+    }
+}
+
+fun Application.configureStatusPages() {
+    install(StatusPages) {
+        status(HttpStatusCode.NotFound) { call, status ->
+            call.respondText(
+                text = getResourceFileContent("files/not-found.html"),
+                contentType = ContentType.Text.Html,
+                status = status
+            )
         }
     }
 }
